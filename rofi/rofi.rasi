@@ -1,0 +1,8 @@
+configuration {
+	modi: "combi,run,window,file-browser";
+	font: "Work Sans 11";
+	show-icons: true;
+	display-window: "Window";
+	display-drun: "Search";
+	theme: "/usr/share/rofi/themes/paper-float.rasi";
+}
