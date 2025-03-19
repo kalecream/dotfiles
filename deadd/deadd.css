@@ -1,0 +1,184 @@
+/* 
+In the file ${XDG_CONFIG_HOME}/deadd/deadd.css (usually .config/deadd/deadd.css) you can add CSS styles (GTK3-flavor). Should the installation not have created a dead.css, you can use the content of style.css as a foundation.
+
+The following class-names for labels are defined:
+
+    Notifications:
+
+    label.deadd-noti-center.notification.appname
+        Appname
+    label.deadd-noti-center.notification.body
+        Textbody
+    label.deadd-noti-center.notification.title
+        Notification title
+    image.deadd-noti-center.notification.image
+        Image of a notification
+    image.deadd-noti-center.notification.icon
+        Appicon
+
+    Notifications in the notification center:
+
+    label.deadd-noti-center.in-center.appname
+        Appname
+    label.deadd-noti-center.in-center.body
+        Textbody
+    label.deadd-noti-center.in-center.title
+        Notification title
+    label.deadd-noti-center.in-center.time
+        Notification time
+    image.deadd-noti-center.in-center.image
+        Image of a notification
+    image.deadd-noti-center.in-center.icon
+        Appicon
+    button.deadd-noti-center.in-center.button-close
+        Close button on notification
+
+    Notification-center:
+
+    label.deadd-noti-center.noti-center.time
+        The big time at the top
+    label.deadd-noti-center.noti-center.date
+        The date text
+    label.deadd-noti-center.noti-center.delete-all
+        “Delete all” Button
+
+ */
+
+
+/* Notification center */
+
+.blurredBG, #main_window, .blurredBG.low, .blurredBG.normal {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#main_window {
+    color: #007ac1;
+}
+
+.noti-center.time {
+    font-size: 36px;
+}
+
+/* Notifications */
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.appname {
+    font-size: 12px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.blurredBG.notification {
+    background:  rgba(255, 255, 255, 0.4);
+}
+
+.blurredBG.notification.critical {
+    background: rgba(255, 0, 0, 0.6);
+}
+
+.notificationInCenter.critical {
+    background: rgba(155, 0, 20, 0.6);
+}
+
+/* Labels */
+
+label {
+    color: #322;
+}
+
+label.notification {
+    color: #322;
+}
+
+label.critical {
+    color: #000;
+}
+.notificationInCenter label.critical {
+    color: #000;
+}
+
+
+/* Buttons */
+
+button {
+    background: transparent;
+    color: #322;
+    border-radius: 3px;
+    border-width: 0px;
+    background-position: 0px 0px;
+    text-shadow: none;
+}
+
+button:hover {
+    border-radius: 3px;
+    background: rgba(0, 20, 20, 0.2);
+    border-width: 0px;
+    border-top: transparent;
+    border-color: #f00;
+    color: #fee;
+}
+
+
+/* Custom Buttons */
+
+.userbutton {
+    background: rgba(20,0,0, 0.15);
+}
+
+.userbuttonlabel {
+    color: #222;
+    font-size: 12px;
+}
+
+.userbutton:hover {
+    background: rgba(20, 0, 0, 0.2);
+}
+
+.userbuttonlabel:hover {
+    color: #111;
+}
+
+button.buttonState1 {
+    background: rgba(20,0,0,0.5);
+}
+
+.userbuttonlabel.buttonState1 {
+    color: #fff;
+}
+
+button.buttonState1:hover {
+    background: rgba(20,0,0, 0.4);
+}
+
+.userbuttonlabel.buttonState1:hover {
+    color: #111;
+}
+
+button.buttonState2 {
+    background: rgba(255,255,255,0.3);
+}
+
+.userbuttonlabel.buttonState2 {
+    color: #111;
+}
+
+button.buttonState2:hover {
+    background: rgba(20,0,0, 0.3);
+}
+
+.userbuttonlabel.buttonState2:hover {
+    color: #000;
+}
+
+
+/* Images */
+
+image.deadd-noti-center.notification.image {
+    margin-left: 20px;
+}
